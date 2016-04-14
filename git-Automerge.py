@@ -39,7 +39,9 @@ def main():
 
     if options.merge_master:
         output=repo.git.status
-        match = re.search('# On branch ([^\s]*)', output)
+	print output
+        match = re.search('On branch ([^\s]*)', output)
+	print match
         branch = None
         if match is None:
             raise Exception('Could not get status')
@@ -49,7 +51,7 @@ def main():
             branch = match.group(1)
             logging.info('In branch %s' % branch)
 
-        if output.endswith('nothing to commit (working directory clean)\n'):
+        if output.endswith('nothing to commit, working directory clean\n'):
             logging.info('Directory clean in branch: %s' % branch)
         else:
             raise Exception('Directory not clean, must commit:\n%s' % output)
