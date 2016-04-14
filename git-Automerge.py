@@ -38,7 +38,7 @@ def main():
         options.merge_master = True
 
     if options.merge_master:
-        output=repo.git.status
+        output=repo.git.status()
 	print "OUTPUT IS %s" %output
         match = re.search('On branch ([^\s]*)', output)
 	print match
