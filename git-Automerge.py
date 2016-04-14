@@ -51,7 +51,7 @@ def main():
             branch = match.group(1)
             logging.info('In branch %s' % branch)
 
-        if output.endswith('nothing to commit, working directory clean\n'):
+        if output.endswith('nothing to commit, working directory clean'):
             logging.info('Directory clean in branch: %s' % branch)
         else:
             raise Exception('Directory not clean, must commit:\n%s' % output)
