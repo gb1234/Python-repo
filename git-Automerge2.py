@@ -31,7 +31,7 @@ def main():
     if options.merge_master:
         output,_ = call_command('git status')
 	
-        match = re.search('# On branch ([^\s]*)', output)
+        match = re.search('On branch ([^\s]*)', output)
 	print match
         branch = None
         if match is None:
