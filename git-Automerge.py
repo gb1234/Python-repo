@@ -57,7 +57,7 @@ def main():
             raise Exception('Directory not clean, must commit:\n%s' % output)
 
         logging.info('Switching to master branch')
-        git.checkout('HEAD',b="master")
+        git.checkout("master")
         git.pull()
         logging.info('Pulled latest changes from origin into master')
         logging.info('Ensuring master has the latest changes')
