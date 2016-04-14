@@ -68,7 +68,7 @@ def main():
             logging.info('Local copy up to date')
 
         logging.info('Switching back to branch: %s' % branch)
-        git.checkout(b="master")
+        repo.git.checkout(master)
     
 if __name__ == "__main__":
     main()
