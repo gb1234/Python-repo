@@ -5,7 +5,6 @@ Created on Dec 11, 2014
 '''
 #16. write down script http://codereview.stackexchange.com/questions/105275/automate-branch-merging-with-git?rq=1
 #http://www.jperla.com/blog/post/a-clean-python-shell-script
-##Usage of git module
 import git
 from git import Repo
 import os
