@@ -1,3 +1,5 @@
+#16. write down script http://codereview.stackexchange.com/questions/105275/automate-branch-merging-with-git?rq=1
+#http://www.jperla.com/blog/post/a-clean-python-shell-script
 #!/usr/bin/env python
 import os
 import re
