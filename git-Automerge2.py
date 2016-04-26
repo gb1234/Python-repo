@@ -72,7 +72,7 @@ def main():
             logging.info('Branch %s up to date' % branch)
 
         logging.info('Successfully merged master into branch %s' % branch)
-
+#
     if options.merge_branch:
         logging.info('Switching to master branch')
         output,_ = call_command('git checkout master')
